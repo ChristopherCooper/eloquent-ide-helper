@@ -1,47 +1,61 @@
 {
-    "name": "carterzenk/eloquent-ide-helper",
-    "description": "A fork of barryvdh/laravel-ide-helper for generating model auto-completion outside of laravel.",
-    "keywords": ["eloquent", "autocomplete", "ide", "helper", "phpstorm", "netbeans", "sublime", "codeintel", "phpdoc"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
-        },
-        {
-            "name": "Carter Zenk",
-            "email": "carterzenk@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4.0",
-        "illuminate/database": "^5.0,<5.5",
-        "illuminate/support": "^5.0,<5.5",
-        "barryvdh/reflection-docblock": "^2.0.4",
-        "symfony/class-loader": "^2.3|^3.0",
-        "symfony/console": "^3.1"
+  "name": "chriscooper/eloquent-ide-helper",
+  "description": "A fork of barryvdh/laravel-ide-helper for generating model auto-completion outside of laravel.",
+  "keywords": [
+    "eloquent",
+    "autocomplete",
+    "ide",
+    "helper",
+    "phpstorm",
+    "netbeans",
+    "sublime",
+    "codeintel",
+    "phpdoc"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Barry vd. Heuvel",
+      "email": "barryvdh@gmail.com"
     },
-    "require-dev": {
-        "phpunit/phpunit" : "4.*",
-        "scrutinizer/ocular": "~1.1",
-        "squizlabs/php_codesniffer": "~2.3",
-        "doctrine/dbal": "~2.3"
+    {
+      "name": "Carter Zenk",
+      "email": "carterzenk@gmail.com"
     },
-    "suggest": {
-        "doctrine/dbal": "Load information from the database about models for phpdocs (~2.3)"
-    },
-    "autoload": {
-        "psr-4": {
-            "CarterZenk\\EloquentIdeHelper\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            ":vendor\\:package_name\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit",
-        "cs": "phpcs --standard=psr2 src/"
+    {
+      "name": "Chris Cooper",
+      "email": "chriscooper207@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/database": "^5.0,<5.5",
+    "illuminate/support": "^5.0,<5.5",
+    "barryvdh/reflection-docblock": "^2.0.4",
+    "symfony/class-loader": "^2.3|^3.0",
+    "symfony/console": "^3.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.3",
+    "doctrine/dbal": "~2.3"
+  },
+  "suggest": {
+    "doctrine/dbal": "Load information from the database about models for phpdocs (~2.3)"
+  },
+  "autoload": {
+    "psr-4": {
+      "CarterZenk\\EloquentIdeHelper\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      ":vendor\\:package_name\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "cs": "phpcs --standard=psr2 src/"
+  }
 }
